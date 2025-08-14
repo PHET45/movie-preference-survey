@@ -18,17 +18,17 @@ const MovieSurvey = () => {
         const newErrors = {};
         
         if (!formData.name.trim()) {
-          newErrors.name = 'กรุณากรอกชื่อ';
+          newErrors.name = 'โปรดใส่ชื่อของคุณ';
         }
         
         if (!formData.email.trim()) {
-          newErrors.email = 'กรุณากรอกอีเมล';
+          newErrors.email = 'โปรดใส่อีเมลของคุณ';
         } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
           newErrors.email = 'รูปแบบอีเมลไม่ถูกต้อง';
         }
         
         if (!formData.selectedMovie) {
-          newErrors.selectedMovie = 'กรุณาเลือกภาพยนตร์';
+          newErrors.selectedMovie = 'กรุณาเลือกหนังที่คุณชอบ';
         }
         
         setErrors(newErrors);
