@@ -207,7 +207,7 @@ const MovieSurvey = () => {
           {(errors.name || errors.email || errors.selectedMovie) && (
             <div className="bg-red-50 border border-red-200 rounded-md p-4">
               <p className="text-red-800 text-sm">
-                * ข้อความแจ้งเตือน (ถ้าข้อมูลไม่ถูกต้อง)
+                * ข้อมูลไม่ถูกต้อง
               </p>
             </div>
           )}
